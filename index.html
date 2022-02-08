@@ -23,14 +23,12 @@
     />
     <!-- emoji -->
     <link rel="stylesheet" href="css/emojionearea.min.css">
-    <script src="js/emojionearea.min.js"></script>
+    
     <!-- font awesome end -->
     <link type="text/css" rel="stylesheet" href="css/jquery.miniColors.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <script src="js/FileSaver.min.js"></script>
-    <script src="js/blop.js"></script>
-    <script type="text/javascript"></script>
+    
     <!-- custom css file -->
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -560,7 +558,10 @@
     <!-- /container -->
 
     <!-- Footer ================================================== -->
-
+    <script src="js/emojionearea.min.js"></script>
+ <script src="js/FileSaver.min.js"></script>
+    <script src="js/blop.js"></script>
+    <script type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/fabric.js"></script>
     <!-- Tailwind css -->
@@ -580,10 +581,10 @@
       }); */
     
       $(document).ready(function () {
-  $(document).on("click", ".tshirt-click", () => {
-    var img = $('img',this).attr('src');
-    /* $("img[name=tshirtview]").attr("src",img); */
-    console.log(img);
+        $(document).on("click", ".tshirt-click", () => {
+          var img = $('img',this).attr('src');
+          /* $("img[name=tshirtview]").attr("src",img); */
+          console.log(img);
   });
  /*  $('.tshirt-click').click(function(){
     var src = $('img', this).attr('src');
@@ -597,16 +598,16 @@
     <script>
       document.querySelector("html").classList.add('js');
 
-var fileInput  = document.querySelector( ".input-file" ),  
-    button     = document.querySelector( ".input-file-trigger" ),
-    the_return = document.querySelector(".file-return");
+       var fileInput  = document.querySelector( ".input-file" ),  
+       button     = document.querySelector( ".input-file-trigger" ),
+          the_return = document.querySelector(".file-return");
       
-button.addEventListener( "keydown", function( event ) {  
-    if ( event.keyCode == 13 || event.keyCode == 32 ) {  
+       button.addEventListener( "keydown", function( event ) {  
+      if ( event.keyCode == 13 || event.keyCode == 32 ) {  
         fileInput.focus();  
-    }  
-});
-button.addEventListener( "click", function( event ) {
+      }  
+    });
+    button.addEventListener( "click", function( event ) {
    fileInput.focus();
    return false;
 });  
